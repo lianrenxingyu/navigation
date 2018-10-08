@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navigation_divide_line"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/little_padding"
+    android:paddingTop="@dimen/small_padding">
+    <!--消息-->
+    <RelativeLayout
+        android:id="@+id/navigation_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_navigation_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/navigation_msg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_navigation_msg"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:text="消息" />
+
+    </RelativeLayout>
+
+    <!--朋友圈 or 动态-->
+    <RelativeLayout
+        android:id="@+id/navigation_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_navigation_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/navigation_friend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_navigation_friend"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:text="朋友圈" />
+    </RelativeLayout>
+
+    <!--微博 or 自由 or 天地-->
+    <RelativeLayout
+        android:id="@+id/navigation_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_navigation_freedom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/navigation_free" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_navigation_freedom"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:text="陌友圈" />
+    </RelativeLayout>
+
+    <!--遇见-->
+    <RelativeLayout
+        android:id="@+id/navigation_meet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_navigation_meet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/navigation_meet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_navigation_meet"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:text="遇见" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="divide">2dp</dimen>
-    <dimen name="little_padding">2dp</dimen>
-    <dimen name="small_padding">4dp</dimen>
-    <dimen name="normal_padding">8dp</dimen>
-    <dimen name="large_padding">16dp</dimen>
+
+    <dimen name="padding_little">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_large_more">32dp</dimen>
+
+    <dimen name="margin_edge_little">2dp</dimen>
+    <dimen name="margin_edge_small">4dp</dimen>
+    <dimen name="margin_edge_normal">8dp</dimen>
+    <dimen name="margin_edge_large">16dp</dimen>
+    <dimen name="margin_edge_large_more">32dp</dimen>
 </resources>

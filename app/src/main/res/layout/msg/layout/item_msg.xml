@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_msg_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/head_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_edge_normal"
+        android:layout_marginStart="@dimen/margin_edge_normal"
+        android:layout_marginTop="@dimen/margin_edge_normal"
+        android:clickable="true"
+        android:src="@mipmap/iv_navigation_message_selected" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/head_image"
+        android:layout_marginLeft="@dimen/margin_edge_normal"
+        android:layout_marginStart="@dimen/margin_edge_normal"
+        android:layout_marginTop="@dimen/margin_edge_small"
+        android:layout_toEndOf="@id/head_image"
+        android:layout_toRightOf="@id/head_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="名字"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!--简要描述-->
+    <TextView
+        android:id="@+id/msg_brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/head_image"
+        android:layout_marginBottom="@dimen/margin_edge_small"
+        android:layout_marginRight="@dimen/margin_edge_large_more"
+        android:layout_marginEnd="@dimen/margin_edge_large_more"
+        android:layout_marginLeft="@dimen/margin_edge_normal"
+        android:layout_marginStart="@dimen/margin_edge_normal"
+        android:layout_toEndOf="@id/head_image"
+        android:layout_toRightOf="@id/head_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="简述" />
+
+    <TextView
+        android:id="@+id/msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/margin_edge_normal"
+        android:layout_marginRight="@dimen/margin_edge_normal"
+        android:text="17:06" />
+
+    <View
+        android:id="@+id/red_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/msg_brief"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/margin_edge_normal"
+        android:layout_marginRight="@dimen/margin_edge_normal"
+        android:background="@android:color/white"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/head_image"
+        android:layout_marginTop="@dimen/margin_edge_small"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>

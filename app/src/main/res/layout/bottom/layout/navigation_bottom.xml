@@ -4,8 +4,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/navigation_divide_line"
     android:orientation="horizontal"
-    android:paddingBottom="@dimen/little_padding"
-    android:paddingTop="@dimen/small_padding">
+    android:paddingBottom="@dimen/padding_little"
+    android:paddingTop="@dimen/padding_small">
     <!--消息-->
     <RelativeLayout
         android:id="@+id/navigation_msg"
@@ -26,7 +26,7 @@
             android:layout_below="@id/iv_navigation_msg"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:padding="@dimen/small_padding"
+            android:padding="@dimen/padding_small"
             android:text="消息" />
 
     </RelativeLayout>
@@ -51,7 +51,7 @@
             android:layout_below="@id/iv_navigation_friend"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:padding="@dimen/small_padding"
+            android:padding="@dimen/padding_small"
             android:text="朋友圈" />
     </RelativeLayout>
 
@@ -75,7 +75,7 @@
             android:layout_below="@id/iv_navigation_freedom"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:padding="@dimen/small_padding"
+            android:padding="@dimen/padding_small"
             android:text="陌友圈" />
     </RelativeLayout>
 
@@ -99,7 +99,7 @@
             android:layout_below="@id/iv_navigation_meet"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:padding="@dimen/small_padding"
+            android:padding="@dimen/padding_small"
             android:text="遇见" />
     </RelativeLayout>
 </LinearLayout>

@@ -19,9 +19,18 @@ public final class LogUtil {
         return mInstance;
     }
 
-    public  void d(String tag, String msg) {
+    public void d(String tag, String msg) {
         if (BuildConfig.DEBUG) {
             Log.d(tag, buildMsg(msg));
+        }
+    }
+
+    /**
+     * 输出的日志信息带有下划线
+     */
+    public void nav(String tag, String msg) {
+        if (BuildConfig.DEBUG) {
+            Log.d(tag, buildNavigationMsg(msg));
         }
     }
 
@@ -32,6 +41,21 @@ public final class LogUtil {
      * @return
      */
     private static String buildMsg(String msg) {
+        StringBuffer buffer = new StringBuffer();
+        StackTraceElement traceElement = Thread.currentThread().getStackTrace()[STACK_DEPTH];
+        buffer.append("[").append(traceElement.getFileName());
+        buffer.append(":").append(traceElement.getLineNumber()).append("] ");
+        buffer.append(msg);
+        return buffer.toString();
+    }
+
+    /**
+     * 构造可以导航到代码的日志
+     *
+     * @param msg
+     * @return
+     */
+    private static String buildNavigationMsg(String msg) {
         StringBuffer buffer = new StringBuffer();
         StackTraceElement traceElement = Thread.currentThread().getStackTrace()[STACK_DEPTH];
         buffer.append("(").append(traceElement.getFileName());
